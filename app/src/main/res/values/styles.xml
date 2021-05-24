@@ -1,0 +1,105 @@
+<resources>
+
+    <!-- Основная тема приложения -->
+    <style name="AppTheme" parent="Theme.AppCompat.Light.NoActionBar">
+        <item name="colorPrimary">@color/colorPrimary</item>
+        <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
+        <item name="android:windowFullscreen">true</item>
+    </style>
+
+    <!-- Тема для splash_screen -->
+    <style name="AppTheme.Launcher">
+        <item name="android:windowBackground">@drawable/splash_screen</item>
+    </style>
+
+    <!-- Стиль для заголовков -->
+    <style name="HeadingStyle" parent="@android:style/TextAppearance">
+        <item name="android:textColor">@color/darkGreen</item>
+        <item name="android:fontFamily">@font/roboto_medium</item>
+        <item name="android:textSize">30sp</item>
+        <item name="android:layout_width">0dp</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:paddingHorizontal">48dp</item>
+        <item name="android:gravity">center|left</item>
+    </style>
+
+    <!-- Стиль для инфо-справки -->
+    <style name="InfoStyle" parent="@android:style/TextAppearance">
+        <item name="android:textColor">@color/darkGreen</item>
+        <item name="android:fontFamily">@font/roboto</item>
+        <item name="android:textSize">18sp</item>
+        <item name="android:layout_width">0dp</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:paddingHorizontal">48dp</item>
+        <item name="android:gravity">center|left</item>
+    </style>
+
+    <!-- Стиль для зеленых кнопок -->
+    <style name="ButtonStyle" parent="@android:style/Widget.Button">
+        <item name="android:background">@drawable/button_form</item>
+        <item name="android:backgroundTint">@color/darkGreen</item>
+        <item name="android:textSize">24sp</item>
+        <item name="android:textColor">@color/lightYellow</item>
+        <item name="android:layout_width">0dp</item>
+        <item name="android:layout_height">50dp</item>
+        <item name="android:layout_marginHorizontal">48dp</item>
+        <item name="android:textAllCaps">false</item>
+    </style>
+
+    <!-- Стиль для полей ввода -->
+    <style name="EditTextStyle" parent="@android:style/Widget.EditText">
+        <item name="android:background">@drawable/edit_text_form</item>
+        <item name="android:textSize">20sp</item>
+        <item name="android:layout_marginHorizontal">48dp</item>
+        <item name="android:paddingStart">24dp</item>
+        <item name="android:paddingEnd">8dp</item>
+        <item name="android:textColor">@color/border</item>
+        <item name="android:layout_width">0dp</item>
+        <item name="android:layout_height">50dp</item>
+        <item name="android:ellipsize">start</item>
+        <item name="android:gravity">center_vertical</item>
+        <item name="android:textAllCaps">false</item>
+    </style>
+
+    <!-- Стиль для картинок справочника -->
+    <style name="DirectoryImage" >
+        <item name="android:background">@drawable/rectangle_for_list</item>
+        <item name="android:layout_marginTop">8dp</item>
+        <item name="android:layout_marginStart">16dp</item>
+        <item name="android:layout_width">100dp</item>
+        <item name="android:layout_height">100dp</item>
+    </style>
+
+    <!-- Стиль для полосок в справочнике -->
+    <style name="DirectoryStrip" >
+        <item name="android:background">@drawable/rectangle_for_list</item>
+        <item name="android:layout_marginTop">8dp</item>
+        <item name="android:layout_marginStart">4dp</item>
+        <item name="android:layout_width">600dp</item>
+        <item name="android:layout_height">2dp</item>
+    </style>
+
+    <!-- Стиль для записей справочника на русском -->
+    <style name="DirectoryTextStyle" parent="@android:style/TextAppearance">
+        <item name="android:textColor">@color/black</item>
+        <item name="android:fontFamily">@font/roboto</item>
+        <item name="android:layout_marginTop">30dp</item>
+        <item name="android:textSize">22sp</item>
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:paddingStart">24dp</item>
+        <item name="android:gravity">center|left</item>
+    </style>
+
+    <!-- Стиль для записей справочника на латыни -->
+    <style name="DirectoryTextStyleLatin" parent="@android:style/TextAppearance">
+        <item name="android:textColor">@color/black</item>
+        <item name="android:fontFamily">@font/cantarell</item>
+        <item name="android:textSize">16sp</item>
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:paddingStart">24dp</item>
+        <item name="android:gravity">center|left</item>
+    </style>
+
+</resources>

@@ -1,0 +1,162 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content">
+
+    <ScrollView
+        android:id="@+id/scrollView2"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <HorizontalScrollView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent">
+
+                <ImageView
+                    android:id="@+id/gardenMapImageView"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintHorizontal_bias="0.0"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent"
+                    app:layout_constraintVertical_bias="0.0"
+                    app:srcCompat="@drawable/garden_map" />
+
+                <ImageView
+                    android:id="@+id/squirrelImageView"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="230dp"
+                    android:layout_marginEnd="380dp"
+                    android:clickable="true"
+                    android:onClick="showSquirrelDialog"
+                    app:layout_constraintEnd_toEndOf="@+id/gardenMapImageView"
+                    app:layout_constraintTop_toTopOf="parent"
+                    app:srcCompat="@drawable/squirrel" />
+
+                <ImageView
+                    android:id="@+id/bigBirdImageView"
+                    android:layout_width="100dp"
+                    android:layout_height="250dp"
+                    android:layout_marginTop="50dp"
+                    android:layout_marginEnd="220dp"
+                    android:clickable="true"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintTop_toTopOf="parent" />
+
+                <ImageView
+                    android:id="@+id/spruceImageView"
+                    android:layout_width="37dp"
+                    android:layout_height="69dp"
+                    android:layout_marginTop="200dp"
+                    android:layout_marginEnd="308dp"
+                    android:clickable="true"
+                    android:onClick="showSpruceDialog"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintTop_toTopOf="parent"
+                    app:srcCompat="@drawable/spruce" />
+
+                <ImageView
+                    android:id="@+id/spruceGreenImageView"
+                    android:layout_width="55dp"
+                    android:layout_height="54dp"
+                    android:layout_marginTop="244dp"
+                    android:layout_marginEnd="320dp"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintTop_toTopOf="parent"
+                    app:srcCompat="@drawable/spruce2" />
+
+                <ImageView
+                    android:id="@+id/spruceGreen2ImageView"
+                    android:layout_width="34dp"
+                    android:layout_height="54dp"
+                    android:layout_marginTop="452dp"
+                    android:layout_marginEnd="348dp"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintTop_toTopOf="parent"
+                    app:srcCompat="@drawable/spruce2" />
+
+                <ImageView
+                    android:id="@+id/dialogWindowImageView"
+                    android:layout_width="154dp"
+                    android:layout_height="117dp"
+                    android:layout_marginTop="230dp"
+                    android:layout_marginEnd="235dp"
+                    android:clickable="true"
+                    android:onClick="hideSquirrelDialog"
+                    android:visibility="invisible"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintTop_toTopOf="parent"
+                    app:srcCompat="@drawable/dialog_window" />
+
+                <ImageView
+                    android:id="@+id/squirrelDialogImageView"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="255dp"
+                    android:layout_marginEnd="250dp"
+                    android:visibility="invisible"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintTop_toTopOf="parent"
+                    app:srcCompat="@drawable/squirrel_dialog" />
+
+                <ImageView
+                    android:id="@+id/spruceWindowDialogImageView"
+                    android:layout_width="196dp"
+                    android:layout_height="93dp"
+                    android:layout_marginTop="192dp"
+                    android:layout_marginEnd="332dp"
+                    android:clickable="true"
+                    android:onClick="hideSpruceDialog"
+                    android:visibility="invisible"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintTop_toTopOf="parent"
+                    app:srcCompat="@drawable/another_dialog_window" />
+
+                <ImageView
+                    android:id="@+id/spruceDialogImageView"
+                    android:layout_width="153dp"
+                    android:layout_height="53dp"
+                    android:layout_marginTop="208dp"
+                    android:layout_marginEnd="365dp"
+                    android:visibility="invisible"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintTop_toTopOf="parent"
+                    app:srcCompat="@drawable/spruce_dialog" />
+
+            </androidx.constraintlayout.widget.ConstraintLayout>
+        </HorizontalScrollView>
+    </ScrollView>
+
+    <ImageView
+        android:id="@+id/imageView5"
+        android:layout_width="86dp"
+        android:layout_height="128dp"
+        android:layout_marginTop="16dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/buttons" />
+
+    <ImageView
+        android:id="@+id/imageView7"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:layout_marginEnd="16dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/sheets" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

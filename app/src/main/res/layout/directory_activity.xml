@@ -1,0 +1,397 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.coordinatorlayout.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/constraintLayout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        app:layout_anchorGravity="center"
+        tools:context=".ThirdActivity"
+        tools:ignore="ExtraText">
+
+
+        <ScrollView
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:layout_marginTop="88dp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <androidx.constraintlayout.widget.ConstraintLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+
+                    <SearchView
+                        android:id="@+id/searchView"
+                        style="@style/EditTextStyle"
+                        android:layout_marginTop="24dp"
+                        android:layout_marginBottom="4dp"
+                        android:layout_marginHorizontal="16dp"
+                        android:backgroundTint="@color/gray"
+                        android:searchHintIcon="@drawable/magnifier"
+                        android:searchIcon="@drawable/magnifier"
+                        android:soundEffectsEnabled="true"
+                        android:splitMotionEvents="true"
+                        app:layout_constraintBottom_toBottomOf="parent"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toTopOf="parent" />
+                </androidx.constraintlayout.widget.ConstraintLayout>
+
+                <androidx.constraintlayout.widget.ConstraintLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:clickable="true"
+                    android:onClick="MoveToDescription">
+
+                    <ImageView
+                        android:id="@+id/giacintfonImageView"
+                        style="@style/DirectoryImage"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toTopOf="parent" />
+
+                    <ImageView
+                        android:id="@+id/strip1ImageView"
+                        style="@style/DirectoryStrip"
+                        app:layout_constraintBottom_toBottomOf="parent"
+                        app:layout_constraintStart_toEndOf="@+id/giacintImageView"
+                        app:layout_constraintTop_toBottomOf="@+id/giacintImageView" />
+
+                    <TextView
+                        android:id="@+id/giacintTextView"
+                        style="@style/DirectoryTextStyle"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="28dp"
+                        android:text="@string/giacint"
+                        app:layout_constraintStart_toEndOf="@+id/giacintfonImageView"
+                        app:layout_constraintTop_toTopOf="parent" />
+
+                    <TextView
+                        android:id="@+id/giacint_latin"
+                        style="@style/DirectoryTextStyleLatin"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:fontFamily="@font/cantarell"
+                        android:text="@string/giacint2"
+                        app:layout_constraintStart_toEndOf="@+id/giacintfonImageView"
+                        app:layout_constraintTop_toBottomOf="@+id/giacintTextView" />
+
+                    <ImageView
+                        android:id="@+id/giacintImageView"
+                        android:layout_width="50dp"
+                        android:layout_height="100dp"
+                        android:layout_marginStart="42dp"
+                        android:layout_marginTop="7dp"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toTopOf="parent"
+                        app:srcCompat="@drawable/giacint" />
+
+                </androidx.constraintlayout.widget.ConstraintLayout>
+
+                <androidx.constraintlayout.widget.ConstraintLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+
+                    <ImageView
+                        android:id="@+id/gortensiaImageView"
+                        style="@style/DirectoryImage"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toTopOf="parent" />
+
+                    <ImageView
+                        android:id="@+id/strip2ImageView"
+                        style="@style/DirectoryStrip"
+                        app:layout_constraintBottom_toBottomOf="parent"
+                        app:layout_constraintStart_toEndOf="@+id/gortensiaImageView"
+                        app:layout_constraintTop_toBottomOf="@+id/gortensiaImageView" />
+
+                    <TextView
+                        android:id="@+id/gortensiaTextView"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/gortensia"
+                        style="@style/DirectoryTextStyle"
+                        app:layout_constraintStart_toEndOf="@+id/gortensiaImageView"
+                        app:layout_constraintTop_toTopOf="parent" />
+
+                    <TextView
+                        android:id="@+id/gortensia_latin"
+                        style="@style/DirectoryTextStyleLatin"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/gortensia2"
+                        app:layout_constraintStart_toEndOf="@+id/gortensiaImageView"
+                        app:layout_constraintTop_toBottomOf="@+id/gortensiaTextView" />
+
+                    <ImageView
+                        android:id="@+id/imageView8"
+                        android:layout_width="100dp"
+                        android:layout_height="50dp"
+                        android:layout_marginStart="16dp"
+                        app:layout_constraintBottom_toBottomOf="@+id/gortensiaImageView"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toTopOf="@+id/gortensiaImageView"
+                        app:srcCompat="@drawable/gortensia" />
+
+                </androidx.constraintlayout.widget.ConstraintLayout>
+
+                <androidx.constraintlayout.widget.ConstraintLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:clickable="true">
+
+                    <ImageView
+                        android:id="@+id/spruceImageView"
+                        style="@style/DirectoryImage"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toTopOf="parent" />
+
+                    <ImageView
+                        android:id="@+id/strip3ImageView"
+                        style="@style/DirectoryStrip"
+                        app:layout_constraintBottom_toBottomOf="parent"
+                        app:layout_constraintStart_toEndOf="@+id/spruceImageView"
+                        app:layout_constraintTop_toBottomOf="@+id/spruceImageView" />
+
+                    <TextView
+                        android:id="@+id/spruceTextView"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/spruce"
+                        style="@style/DirectoryTextStyle"
+                        app:layout_constraintStart_toEndOf="@+id/spruceImageView"
+                        app:layout_constraintTop_toTopOf="parent" />
+
+                    <TextView
+                        android:id="@+id/spruce_latin"
+                        style="@style/DirectoryTextStyleLatin"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/spruce2"
+                        app:layout_constraintStart_toEndOf="@+id/spruceImageView"
+                        app:layout_constraintTop_toBottomOf="@+id/spruceTextView" />
+
+                    <ImageView
+                        android:id="@+id/imageView9"
+                        android:layout_width="50dp"
+                        android:layout_height="100dp"
+                        android:layout_marginStart="41dp"
+                        android:layout_marginTop="7dp"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toTopOf="parent"
+                        app:srcCompat="@drawable/srpuce_blue" />
+
+                </androidx.constraintlayout.widget.ConstraintLayout>
+
+                <androidx.constraintlayout.widget.ConstraintLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+
+                    <ImageView
+                        android:id="@+id/vasilekImageView"
+                        style="@style/DirectoryImage"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toTopOf="parent" />
+
+                    <ImageView
+                        android:id="@+id/strip4ImageView"
+                        style="@style/DirectoryStrip"
+                        app:layout_constraintBottom_toBottomOf="parent"
+                        app:layout_constraintStart_toEndOf="@+id/vasilekImageView"
+                        app:layout_constraintTop_toBottomOf="@+id/vasilekImageView" />
+
+                    <TextView
+                        android:id="@+id/vasilekTextView"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/vasilek"
+                        style="@style/DirectoryTextStyle"
+                        app:layout_constraintStart_toEndOf="@+id/vasilekImageView"
+                        app:layout_constraintTop_toTopOf="parent" />
+
+                    <TextView
+                        android:id="@+id/vasilek_latin"
+                        style="@style/DirectoryTextStyleLatin"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/vasilek2"
+                        app:layout_constraintStart_toEndOf="@+id/vasilekImageView"
+                        app:layout_constraintTop_toBottomOf="@+id/vasilekTextView" />
+
+                    <ImageView
+                        android:id="@+id/imageView10"
+                        android:layout_width="40dp"
+                        android:layout_height="100dp"
+                        android:layout_marginStart="45dp"
+                        android:layout_marginTop="8dp"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toTopOf="parent"
+                        app:srcCompat="@drawable/vasilek" />
+
+
+                </androidx.constraintlayout.widget.ConstraintLayout>
+
+                <androidx.constraintlayout.widget.ConstraintLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+
+                    <ImageView
+                        android:id="@+id/irisImageView"
+                        style="@style/DirectoryImage"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toTopOf="parent" />
+
+                    <ImageView
+                        android:id="@+id/strip5ImageView"
+                        style="@style/DirectoryStrip"
+                        app:layout_constraintBottom_toBottomOf="parent"
+                        app:layout_constraintStart_toEndOf="@+id/irisImageView"
+                        app:layout_constraintTop_toBottomOf="@+id/irisImageView" />
+
+                    <TextView
+                        android:id="@+id/irisTextView"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/iris"
+                        style="@style/DirectoryTextStyle"
+                        app:layout_constraintStart_toEndOf="@+id/irisImageView"
+                        app:layout_constraintTop_toTopOf="parent" />
+
+                    <TextView
+                        android:id="@+id/iris_latin"
+                        style="@style/DirectoryTextStyleLatin"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/iris2"
+                        app:layout_constraintStart_toEndOf="@+id/irisImageView"
+                        app:layout_constraintTop_toBottomOf="@+id/irisTextView" />
+
+                    <ImageView
+                        android:id="@+id/imageView11"
+                        android:layout_width="50dp"
+                        android:layout_height="100dp"
+                        android:layout_marginStart="42dp"
+                        android:layout_marginTop="8dp"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toTopOf="parent"
+                        app:srcCompat="@drawable/iris" />
+
+                </androidx.constraintlayout.widget.ConstraintLayout>
+
+                <androidx.constraintlayout.widget.ConstraintLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+
+                    <ImageView
+                        android:id="@+id/giacint2ImageView"
+                        style="@style/DirectoryImage"
+                        android:background="@drawable/rectangle_for_list"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toTopOf="parent" />
+
+                    <ImageView
+                        android:id="@+id/strip6ImageView"
+                        style="@style/DirectoryStrip"
+                        app:layout_constraintBottom_toBottomOf="parent"
+                        app:layout_constraintStart_toEndOf="@+id/giacint2ImageView"
+                        app:layout_constraintTop_toBottomOf="@+id/giacint2ImageView" />
+
+                    <TextView
+                        android:id="@+id/giacint2TextView"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/giacint"
+                        style="@style/DirectoryTextStyle"
+                        app:layout_constraintStart_toEndOf="@+id/giacint2ImageView"
+                        app:layout_constraintTop_toTopOf="parent" />
+
+                    <TextView
+                        android:id="@+id/giacint2_latin"
+                        style="@style/DirectoryTextStyleLatin"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/giacint2"
+                        app:layout_constraintStart_toEndOf="@+id/giacint2ImageView"
+                        app:layout_constraintTop_toBottomOf="@+id/giacint2TextView" />
+
+                    <ImageView
+                        android:id="@+id/imageView12"
+                        android:layout_width="50dp"
+                        android:layout_height="100dp"
+                        android:layout_marginStart="42dp"
+                        android:layout_marginTop="7dp"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toTopOf="parent"
+                        app:srcCompat="@drawable/giacint" />
+
+                </androidx.constraintlayout.widget.ConstraintLayout>
+
+            </LinearLayout>
+        </ScrollView>
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+    <com.google.android.material.appbar.AppBarLayout
+        android:id="@+id/appbar"
+        android:background="@color/darkGreen"
+        android:layout_width="match_parent"
+        android:layout_height="88dp">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <ImageView
+                android:id="@+id/sheetsImageView"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="24dp"
+                android:layout_marginEnd="12dp"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:srcCompat="@drawable/sheets" />
+
+            <ImageButton
+                android:id="@+id/backImageButton"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="4dp"
+                android:layout_marginTop="24dp"
+                android:backgroundTint="@android:color/transparent"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:srcCompat="@drawable/back" />
+
+            <TextView
+                android:id="@+id/directoryTextView"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_marginTop="24dp"
+                android:layout_marginEnd="24dp"
+                android:gravity="center|left"
+                android:textSize="21sp"
+                android:text="@string/directory"
+                android:textAppearance="@style/InfoStyle"
+                android:textColor="@color/white"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="@+id/backImageButton"
+                app:layout_constraintTop_toTopOf="parent" />
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+    </com.google.android.material.appbar.AppBarLayout>
+
+</androidx.coordinatorlayout.widget.CoordinatorLayout>

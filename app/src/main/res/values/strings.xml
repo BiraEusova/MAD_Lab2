@@ -1,0 +1,48 @@
+<resources>
+    <string name="app_name">Laba2</string>
+    <string name="welcome">Добро пожаловать в Сибирский Ботанический сад</string>
+    <string name="welcome_tsu">Томского Государственного Университета</string>
+    <string name="enter">войти</string>
+    <string name="registration">регистрация</string>
+    <string name="enter_login">Пожалуйста, введите свой логин</string>
+    <string name="forgot_password">забыли пароль?</string>
+    <string name="login_or_email">логин или e-mail</string>
+    <string name="password">пароль</string>
+    <string name="or">или</string>
+    <string name="no_account">нет аккаунта</string>
+    <string name="enter_info">Пожалуйста, ведите свои данные</string>
+    <string name="already_have">уже есть аккаунт</string>
+    <string name="data_processing_part1"> даю согласие на обработку моих персональных данных и соглашаюсь</string>
+    <string name="data_processing_part2">с </string>
+    <string name="data_processing_part3"><u>политикой конфендициальности</u></string>
+    <string name="data_processing_part"> даю согласие на обработку моих персональных данных и соглашаюсь c <u>политикой конфендициальности</u> </string>
+    <string name="name">имя</string>
+    <string name="repeatPassword">повторите пароль</string>
+    <string name="create_name">Придумайте название вашего сада</string>
+    <string name="gardenName">имя сада</string>
+    <string name="done">готово</string>
+    <string name="directory">Справочник посадок</string>
+    <string name="giacint">Гиацинт</string>
+    <string name="giacint2">Hyacinthus</string>
+    <string name="gortensia">Гортензия</string>
+    <string name="gortensia2">Hydrangea</string>
+    <string name="spruce">Ель</string>
+    <string name="spruce2">Picea Abies</string>
+    <string name="vasilek">Василек</string>
+    <string name="vasilek2">Centaurea cyanus</string>
+    <string name="iris">Ирис</string>
+    <string name="iris2">Iris</string>
+    <string name="giacint_caps">ГИАЦИНТ</string>
+    <string name="giacint_lat">лат. Hyacinthus</string>
+    <string name="giacint_descriotion">Гиаци́нт (лат. Hyacínthus) — род растений семейства Спаржевые (Asparagaceae). Ранее выделялся в собственное семейство Гиацинтовые (Hyacinthaceae) или включался в семейство Лилейные (Liliaceae).
+
+Названия цветка происходит от древнегреческого мифа о спартанском принце Гиацинте, возлюбленном Аполлона, которого тот случайно убил во время игры в метание диска и из крови которого по легенде и появился этот цветок. Луковичные многолетние травы.
+
+Луковица плотная, состоящая из мясистых низовых листьев, занимающих своими основаниями всю окружность донца луковицы. Цветущий стебель является непосредственным продолжением донца, которое есть не что иное, как нижняя, сильно укороченная и толстая часть стебля. После отцветания зелёный цветоносный стебель вместе с зелёными листьями, сидящими при нём в самом низу, отсыхает, но в углу самого верхнего из зелёных листьев образуется на стебле, внутри луковицы, почка, которая мало-помалу разрастается и превращается в молодую луковицу, зацветающую на следующий год. В этой молодой луковице осенью уже заложен, разумеется в самом сжатом виде, стебель с цветками будущего года. Кроме этой молодой луковицы, в углах зелёных остальных листьев нередко образуются другие более слабые дочерние луковицы, так называемые детки, которые можно отделять. Через несколько лет они могут цвести.
+
+Цветки собраны на верхушке стебля в виде кисти. Околоцветник их, в виде колокольчатой воронки, ярко окрашен и с отогнутыми лопастями.
+
+Плод в виде кожистой коробочки с тремя гнёздами, содержащими по два семени с хрупкой кожурой.</string>
+
+
+</resources>
